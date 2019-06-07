@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Angel Santiago | Full Stack Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/css/uikit.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    
+    <header class="header">
+        <canvas id="canvas" resize></canvas>
+
+        <div class="header__text-box">
+            <h1 class="heading-primary">
+                <span>Hi, I'm <span class="heading-primary__name">Angel Santiago.</span></span>
+                <span>I'm a full-stack web developer.</span>
+            </h1>
+
+            <a class="btn btn--centered btn--cta u-w-3" href="#about" uk-scroll>View my work
+                <ion-icon class="btn__icon" name="arrow-forward"></ion-icon>
+            </a>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="about" class="section-about">
+            <div class="container">
+                <img src="img/avatar.png" alt="Avatar" class="avatar u-mb-4">
+    
+                <h2 class="heading-secondary">About Me</h2>
+                <p>My journey started nearly 3 years ago and I love what I do.
+                I'm completely self-taught and I have a passion for mentoring.
+                I'm constantly looking to polish my skills and bring value to users with my
+                creations !</p>
+            </div>
+        </section>
+
+        <section class="section-skills">
+            <div class="container">
+                <div class="card-container">
+                    <div class="card-container__content">
+                        <div class="section group">
+                            <div class="col span_1_of_2">
+                                <div class="u-px-2">
+                                    <ion-icon name="browsers" class="icon-big"></ion-icon>
+        
+                                    <h3 class="heading-tertiary heading-tertiary--pink">Front-end Developer</h3>
+                                    <p class="card-container__text u-mb-3">I like clean and simple interfaces.</p>
+        
+                                    <h3 class="heading-fourtuary u-fw-b">Languages I speak:</h3>
+                                    <p class="card-container__text u-mb-3">HTML5, CSS3, SASS, 
+                                    JavaScript</p>
+        
+                                    <h3 class="heading-fourtuary u-fw-b">Technologies & Tools:</h3>
+                                    <ul class="card-container__list">
+                                        <li class="card-container__list-item">Bootstrap</li>
+                                        <li class="card-container__list-item">MaterializeCSS</li>
+                                        <li class="card-container__list-item">Git/GitHub</li>
+                                        <li class="card-container__list-item">Terminal</li>
+                                        <li class="card-container__list-item">Codepen</li>
+                                        <li class="card-container__list-item">VS Code</li>
+                                    </ul>
+                                </div>
+                            </div>
+    
+                            <div class="col span_1_of_2">
+                                <div class="u-px-2">
+                                    <ion-icon name="code" class="icon-big"></ion-icon>
+        
+                                    <h3 class="heading-tertiary heading-tertiary--pink">Back-end Developer</h3>
+                                    <p class="card-container__text u-mb-3">Making web pages dynamic is fun!</p>
+        
+                                    <h3 class="heading-fourtuary u-fw-b">Frameworks & Languages:</h3>
+                                    <p class="card-container__text u-mb-3">PHP/Yii2, JavaScript/ExpressJS</p>
+        
+                                    <h3 class="heading-fourtuary u-fw-b">Technologies & Tools:</h3>
+                                    <ul class="card-container__list">
+                                        <li class="card-container__list-item">NPM</li>
+                                        <li class="card-container__list-item">Composer</li>
+                                        <li class="card-container__list-item">MySQL</li>
+                                        <li class="card-container__list-item">MongoDB</li>
+                                        <li class="card-container__list-item">NodeJS</li>
+                                        <li class="card-container__list-item">XAMPP</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section-projects">
+            <div class="container">
+                <h2 class="heading-secondary u-mb-4 color-secondary">What I've recenly worked on</h2>
+    
+                <div uk-filter="target: .js-filter">
+                    <ul class="uk-subnav uk-subnav-pill">
+                        <li class="uk-active" uk-filter-control><a href="#">All</a></li>
+                        <li uk-filter-control=".tag-freelance"><a href="#">Freelance</a></li>
+                        <li uk-filter-control=".tag-js"><a href="#">JS</a></li>
+                        <li uk-filter-control=".tag-css"><a href="#">CSS</a></li>
+                    </ul>
+                    
+                    <ul class="js-filter uk-child-width-1-3@m" uk-grid>
+                        <li class="tag-freelance">
+                            <div class="card">
+                                <div class="card__side card__side--front card__side--front-1">
+                                    <div class="card__content-box">
+                                        <h2 class="heading-secondary u-mb-2">Emprende</h2>
+                                        <a class="btn btn--small btn--white btn--centered u-visible-on-med-and-lower" 
+                                        href="http://emprendiendo.upra.edu"
+                                        target="_blank">View Site</a>
+                                    </div>
+                                </div>
+                                <div class="card__side card__side--back">
+                                    <div class="card__content-box">
+                                        <div class="card__description">A landing page for a startup 
+                                        building program in the University of Puerto Rico in Arecibo.</div>
+                                        <a class="btn btn--small btn--primary btn--centered" 
+                                        href="http://emprendiendo.upra.edu"
+                                        target="_blank">View Site</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tag-freelance">
+                            <div class="card">
+                                <div class="card__side card__side--front card__side--front-2">
+                                    <div class="card__content-box">
+                                        <h2 class="heading-secondary u-mb-2">Chef Andy</h2>
+                                        <a class="btn btn--small btn--white btn--centered u-visible-on-med-and-lower" 
+                                        href="https://chefandynievesofficial.github.io/"
+                                        target="_blank">View Site</a>
+                                    </div>
+                                </div>
+                                <div class="card__side card__side--back">
+                                    <div class="card__content-box">
+                                        <div class="card__description">Award-winning Chef Andy Nieve's website.</div>
+                                        <a class="btn btn--small btn--primary btn--centered" 
+                                        href="https://chefandynievesofficial.github.io/"
+                                        target="_blank">View Site</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tag-css">
+                            <div class="card">
+                                <div class="card__side card__side--front card__side--front-3">
+                                    <div class="card__content-box">
+                                        <h2 class="heading-secondary u-mb-2">Natours</h2>
+                                        <a class="btn btn--small btn--white btn--centered u-visible-on-med-and-lower" 
+                                        href="projects/natours/index.html"
+                                        target="_blank">View Site</a>
+                                    </div>
+                                </div>
+                                <div class="card__side card__side--back">
+                                    <div class="card__content-box">
+                                        <div class="card__description">A landing page template for a nature touring company. Built using professional practices previous to CSS3.</div>
+                                        <a class="btn btn--small btn--primary btn--centered"
+                                        href="projects/natours/index.html"
+                                        target="_blank">View Site</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tag-css">
+                            <div class="card">
+                                <div class="card__side card__side--front card__side--front-4">
+                                    <div class="card__content-box">
+                                        <h2 class="heading-secondary u-mb-2">Trillo</h2>
+                                        <a class="btn btn--small btn--white btn--centered u-visible-on-med-and-lower" 
+                                        href="projects/trillo/index.html"
+                                        target="_blank">View Site</a>
+                                    </div>
+                                </div>
+                                <div class="card__side card__side--back">
+                                    <div class="card__content-box">
+                                        <div class="card__description">A view page template for a hotel renting company. Built using CSS Flexbox.</div>
+                                        <a class="btn btn--small btn--primary btn--centered"
+                                        href="projects/trillo/index.html"
+                                        target="_blank">View Site</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tag-js">
+                            <div class="card">
+                                <div class="card__side card__side--front card__side--front-5">
+                                    <div class="card__content-box">
+                                        <h2 class="heading-secondary u-mb-2">Weather App</h2>
+                                        <a class="btn btn--small btn--white btn--centered u-visible-on-med-and-lower" 
+                                        href="https://angeldev-node-weather-app.herokuapp.com/"
+                                        target="_blank">View Site</a>
+                                    </div>
+                                </div>
+                                <div class="card__side card__side--back">
+                                    <div class="card__content-box">
+                                        <div class="card__description">A weather app built using ExpressJS & AJAX. It uses the Mapbox & Dark Sky APIs.</div>
+                                        <a class="btn btn--small btn--primary btn--centered" 
+                                        href="https://angeldev-node-weather-app.herokuapp.com/"
+                                        target="_blank">View Site</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tag-css">
+                            <div class="card">
+                                <div class="card__side card__side--front card__side--front-6">
+                                    <div class="card__content-box">
+                                        <h2 class="heading-secondary u-mb-2">Nexter</h2>
+                                        <a class="btn btn--small btn--white btn--centered u-visible-on-med-and-lower" 
+                                        href="projects/nexter/index.html"
+                                        target="_blank">View Site</a>
+                                    </div>
+                                </div>
+                                <div class="card__side card__side--back">
+                                    <div class="card__content-box">
+                                        <div class="card__description">A landing page template for buying luxury homes. Built using CSS Grids.</div>
+                                        <a class="btn btn--small btn--primary btn--centered" 
+                                        href="projects/nexter/index.html"
+                                        target="_blank">View Site</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tag-js">
+                            <div class="card">
+                                <div class="card__side card__side--front card__side--front-7">
+                                    <div class="card__content-box">
+                                        <h2 class="heading-secondary u-mb-2">Pig Game</h2>
+                                        <a class="btn btn--small btn--white btn--centered u-visible-on-med-and-lower" 
+                                        href="projects/pig-game/index.html"
+                                        target="_blank">View Site</a>
+                                    </div>
+                                </div>
+                                <div class="card__side card__side--back">
+                                    <div class="card__content-box">
+                                        <div class="card__description">A game built in HTML, CSS, and JavaScript (ES5).</div>
+                                        <a class="btn btn--small btn--primary btn--centered"
+                                        href="projects/pig-game/index.html"
+                                        target="_blank">View Site</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tag-js">
+                            <div class="card">
+                                <div class="card__side card__side--front card__side--front-8">
+                                    <div class="card__content-box">
+                                        <h2 class="heading-secondary u-mb-2">Budgety</h2>
+                                        <a class="btn btn--small btn--white btn--centered u-visible-on-med-and-lower" 
+                                        href="projects/budgety/"
+                                        target="_blank">View Site</a>
+                                    </div>
+                                </div>
+                                <div class="card__side card__side--back">
+                                    <div class="card__content-box">
+                                        <div class="card__description">A budget app with lots of DOM manupulation. Built in HTML, CSS, and JavaScript (ES5).</div>
+                                        <a class="btn btn--small btn--primary btn--centered"
+                                        href="projects/budgety/index.html"
+                                        target="_blank">View Site</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tag-js">
+                            <div class="card">
+                                <div class="card__side card__side--front card__side--front-9">
+                                    <div class="card__content-box">
+                                        <h2 class="heading-secondary u-mb-2">Forkify</h2>
+                                        <a class="btn btn--small btn--white btn--centered u-visible-on-med-and-lower" 
+                                        href="projects/forkify/"
+                                        target="_blank">View Site</a>
+                                    </div>
+                                </div>
+                                <div class="card__side card__side--back">
+                                    <div class="card__content-box">
+                                        <div class="card__description">A recipe search app built in HTML, CSS, and JavaScript (ES6). It uses AJAX w/ the new Async/Await & Local Storage Web API and the Food2Fork API.</div>
+                                        <a class="btn btn--small btn--primary btn--centered"
+                                        href="projects/forkify/index.html"
+                                        target="_blank">View Site</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-contact">
+            <div class="container">
+                <h2 class="heading-secondary u-text-center">Let's Build Something Together!</h2>
+
+                <form action="https://formspree.io/dev.angelsangon@gmail.com" method="POST"
+                class="form">
+                    <div class="row">
+                        <div class="col span_1_of_2">
+                            <div class="form__field">
+                                <input type="text" name="name" class="form__input" placeholder="Full Name" required>
+                            </div>
+                        </div>
+
+                        <div class="col span_1_of_2">
+                            <div class="form__field">
+                                <input type="email" name="_replyto" class="form__input" placeholder="Email" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form__field">
+                            <textarea name="content" cols="30" rows="10" 
+                            class="form__input" placeholder="I'm contacting you because..." required></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Send" class="form__btn btn--centered">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer__social">
+            <a href="https://www.linkedin.com/in/angel-santiago-9205a2187/" target="_blank" class="footer__social-btn">
+                <ion-icon name="logo-linkedin" class="footer__social-icon"></ion-icon>
+            </a>
+            <a href="https://github.com/angel-santiago31" target="_blank" class="footer__social-btn">
+                <ion-icon name="logo-github" class="footer__social-icon"></ion-icon>
+            </a>
+            <a href="https://codepen.io/angel-santiago31/" target="_blank" class="footer__social-btn">
+                <ion-icon name="logo-codepen" class="footer__social-icon"></ion-icon>
+            </a>
+        </div>
+
+        <p class="footer__text">Built with <ion-icon name="heart" class="footer__heart"></ion-icon> in Puerto Rico.</p>
+
+        <p class="footer__text">Angel Santiago <span class="footer__copy">&copy; 2019</span></p>
+    </footer>
+
+
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script src="js/paper-full.min.js"></script>
+    <script type="text/paperscript" canvas="canvas" src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/js/uikit.min.js"></script>
+</body>
+</html>
