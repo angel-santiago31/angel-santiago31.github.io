@@ -60,11 +60,9 @@
                                     <h3 class="heading-fourtuary u-fw-b">Technologies & Tools:</h3>
                                     <ul class="card-container__list">
                                         <li class="card-container__list-item">Bootstrap</li>
-                                        <li class="card-container__list-item">MaterializeCSS</li>
                                         <li class="card-container__list-item">Git/GitHub</li>
                                         <li class="card-container__list-item">Terminal</li>
                                         <li class="card-container__list-item">Codepen</li>
-                                        <li class="card-container__list-item">VS Code</li>
                                     </ul>
                                 </div>
                             </div>
@@ -77,16 +75,14 @@
                                     <p class="card-container__text u-mb-3">Making web pages dynamic is fun!</p>
         
                                     <h3 class="heading-fourtuary u-fw-b">Frameworks & Languages:</h3>
-                                    <p class="card-container__text u-mb-3">PHP/Yii2, JavaScript/ExpressJS</p>
+                                    <p class="card-container__text u-mb-3">Express</p>
         
                                     <h3 class="heading-fourtuary u-fw-b">Technologies & Tools:</h3>
                                     <ul class="card-container__list">
                                         <li class="card-container__list-item">NPM</li>
-                                        <li class="card-container__list-item">Composer</li>
                                         <li class="card-container__list-item">MySQL</li>
                                         <li class="card-container__list-item">MongoDB</li>
-                                        <li class="card-container__list-item">NodeJS</li>
-                                        <li class="card-container__list-item">XAMPP</li>
+                                        <li class="card-container__list-item">Node.js</li>
                                     </ul>
                                 </div>
                             </div>
@@ -269,23 +265,23 @@
     <footer class="footer">
 
         <div class="footer__social">
-            <a href="https://www.linkedin.com/in/angel-santiago-9205a2187/" target="_blank" class="footer__social-btn">
+            <a href="https://www.linkedin.com/in/angsangon/" target="_blank" class="footer__social-btn">
                 <ion-icon name="logo-linkedin" class="footer__social-icon"></ion-icon>
             </a>
             <a href="https://github.com/angel-santiago31" target="_blank" class="footer__social-btn">
                 <ion-icon name="logo-github" class="footer__social-icon"></ion-icon>
             </a>
-            <a href="https://codepen.io/angel-santiago31/" target="_blank" class="footer__social-btn">
+            <a href="https://codepen.io/angeldev/" target="_blank" class="footer__social-btn">
                 <ion-icon name="logo-codepen" class="footer__social-icon"></ion-icon>
             </a>
         </div>
 
         <p class="footer__text">Built with <ion-icon name="heart" class="footer__heart"></ion-icon> in Puerto Rico.</p>
 
-        <p class="footer__text">Angel Santiago <span class="footer__copy">&copy; 2019</span></p>
+        <p class="footer__text">Angel Santiago <span class="footer__copy" id="current-year"></span></p>
     </footer>
 
-
+    <script> document.getElementById("current-year").innerHTML = `&copy; ${new Date().getFullYear()}` </script>
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
     <script src="js/paper-full.min.js"></script>
     <script type="text/paperscript" canvas="canvas" src="js/script.js"></script>
